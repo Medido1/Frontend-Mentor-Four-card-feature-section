@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  /* # Colors */
+
+    /* ## Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+    /* ## Neutral */
+
+  --Very_Dark_Blue: hsl(234, 12%, 34%);
+  --Grayish_Blue: hsl(229, 6%, 66%);
+  --Very_Light_Gray: hsl(0, 0%, 98%);
+
+  /* ## Fonts */
+
+  --font_family : 'Poppins', sans-serif;
+  --extra_light : 200;
+  --regular : 400;
+  --semi_bold : 600;
+  --font_size : 15px;
+}
+
+/* css reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* document styling */
+
+body {
+  background-color: var(--Very_Light_Gray);
+  padding: 4rem 2rem;
+  font-family: var(--font_family);
+  font-size: var(--font_size);
+  color: var(--Grayish_Blue);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title_top_part {
+  font-weight: var(--regular);
+}
+
+.title_bottom_part,
+.card h2 {
+  color: var(--Very_Dark_Blue);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  border-radius: 0 0 .5rem .5rem;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem .5rem #dedede;
+  max-width: 300px;
+}
+
+.middle_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  margin-left: auto;
+  margin-bottom: .5rem;
+  width: 50px;
+  height: auto;
+}
+
+.main>div:first-child {
+  border-top: 4px solid var(--Cyan);
+}
+
+.team_builder{
+  border-top: 4px solid var(--Red);
+}
+
+.karma{
+  border-top: 4px solid var(--Orange)
+}
+
+.main>div:last-child{
+  border-top: 4px solid var(--Blue)
+}
+
+@media (min-width : 750px){
+  body {
+    height: 100vh;
+    padding: 2rem 1rem;
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+  .header,
+  .header h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header h1{
+    margin-bottom: .5rem;
+  }
+  .header p{
+    max-width: 500px;
+  }
+  .main{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .middle_cards{
+    gap:  1.5rem;
+  }
+}
+
+/* attribution styling */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
