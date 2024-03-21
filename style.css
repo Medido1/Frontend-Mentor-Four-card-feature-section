@@ -90,6 +90,9 @@ body {
 .title_bottom_part,
 .card h2 {
   color: var(--Very_Dark_Blue);
+}
+
+.card h2 {
   font-size: 1rem;
 }
 
@@ -144,6 +147,7 @@ body {
   body {
     height: 100vh;
     padding: 4rem 1rem;
+    
   }
   .header {
     margin-bottom: 2rem;
